@@ -1,4 +1,4 @@
-# ProjectsIoT2022
+# ProjectsIoT2022-Caja fuerte
 
 ## Integrantes
 - Camacho Pérez Cristian Uriel
