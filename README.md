@@ -1,10 +1,10 @@
 # ProjectsIoT2022
 
 ## Integrantes
-- Nombre y Apellidos del primer integrante
-- Nombre y Apellidos del segundo integrante
-- Nombre y Apellidos del tercer integrante
-- Nombre y Apellidos del cuarto integrante
+- Camacho Pérez Cristian Uriel
+- Mendoza Arredondo Alan Manuel
+- Rangel Paredón Daniel
+- Martínez García José Manuel
 
 ## Objetivo general
 Parrafo con el objetivo general
