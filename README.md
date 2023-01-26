@@ -7,7 +7,7 @@
 - Martínez García José Manuel
 
 ## Objetivo general
-Parrafo con el objetivo general
+El obejtivo general es crear una caja uerte inteligente ya que esta contará con diversos senores y actuadores que le permitirán tener un mejor control de lo que se encuentre dentro de esta.
 ### Objetivos específicos
 - Elemento 1 de la lista de objetivos específicos
 - Elemento 2 de la lista de objetivos específicos
@@ -17,11 +17,12 @@ Parrafo con el objetivo general
 - Elemento n de la lista de objetivos específicos
 
 ## Tabla de Software utilizado
-| Id | Software | Version | Tipo |
-|----|----------|---------|------|
-|    |          |         |      |
-|    |          |         |      |
-|    |          |         |      |
+| Id  | Software | Version | Tipo |
+|-----|----------|---------|------|
+|  1  | Visual Studio     |         |      |
+|  2  |  Node-Red        |         |      |
+|  3  |  Mosquitto        |         |      |
+|  4  |  Gestor de base de datos        |         |      |
 
 ## Tabla con el hardware utilizado
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
