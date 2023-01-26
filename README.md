@@ -17,19 +17,25 @@ El obejtivo general es crear una caja uerte inteligente ya que esta contará con
 - Elemento n de la lista de objetivos específicos
 
 ## Tabla de Software utilizado
-| Id  | Software | Version | Tipo |
-|-----|----------|---------|------|
-|  1  | Visual Studio     |         |      |
-|  2  |  Node-Red        |         |      |
-|  3  |  Mosquitto        |         |      |
-|  4  |  Gestor de base de datos        |         |      |
+| Id | Software | Vesión | Tipo |
+|----|------------|-------------|--------|
+|1| 	Visual Studio Code |	1.71.2 |	Freeware
+|2| 	Arduino IDE |	2 |	2 |
+|3| 	Libreria para sensor temperatura y humedad |	x |	x |
+|4| 	Mosquitto |	5.0,3.1.1 | 	Freeware |
+|5|	NODE-RED |	3.0 |	Freeware |
+|5| 	Motor de base de datos |	x |	Freeware |
 
 ## Tabla con el hardware utilizado
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
 |----|------------|-------------|--------|----------|-------------|
-|    |            |             |        |          |             |
-|    |            |             |        |          |             |
-|    |            |             |        |          |             |
+|   1 |  ESP32         |             |        |    1      |             |
+|   2 |  Sensor de temperatura y humedad  DHT11        |             |        |     1     |             |
+|   3 |  Buzzer         |             |        |     1     |             |
+|   4 |  Leds          |             |        |     5     |             |
+|   5 |  Display LCD          |             |        |     1     |             |
+|   6 |  Menbrane Switch         |             |        |    1      |             |
+|   7 |  Breadboard          |             |        |    1      |             |
 
 ## Epicas del proyecto (Minimo debe de haber una épica por integrante de equipo)
 - Elemento de la lista de épicas del proyecto
