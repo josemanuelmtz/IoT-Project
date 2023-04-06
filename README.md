@@ -7,10 +7,11 @@
 - Martínez García José Manuel
 
 ## Objetivo general
-El obejtivo general es crear una caja uerte inteligente ya que esta contará con diversos senores y actuadores que le permitirán tener un mejor control de lo que se encuentre dentro de esta.
+El obejtivo general es crear una caja fuerte inteligente, ya que esta contará con diversos senores y actuadores que le permitirán tener un mejor control de lo que se encuentre dentro de esta, además de brindar una mejor seguridad.
+
 ### Objetivos específicos
-- Elemento 1 de la lista de objetivos específicos
-- Elemento 2 de la lista de objetivos específicos
+- Sólo se abrirá cuando la contraseña sea correcta 
+- Advertirá a los dueños sobre posibles incendios o fugas de gas
 - Elemento 3 de la lista de objetivos específicos
 - Elemento 4 de la lista de objetivos específicos
 ...
@@ -29,19 +30,23 @@ El obejtivo general es crear una caja uerte inteligente ya que esta contará con
 ## Tabla con el hardware utilizado
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
 |----|------------|-------------|--------|----------|-------------|
-|   1 |  ESP32         |             |        |    1      |             |
-|   2 |  Sensor de temperatura y humedad  DHT11        |             |        |     1     |             |
-|   3 |  Buzzer         |             |        |     1     |             |
-|   4 |  Leds          |             |        |     5     |             |
-|   5 |  Display LCD          |             |        |     1     |             |
-|   6 |  Menbrane Switch         |             |        |    1      |             |
-|   7 |  Breadboard          |             |        |    1      |             |
+|   1 |  ESP32         |  	El módulo ESP32 es una solución de Wi-Fi/Bluetooth todo en uno, integrada y certificada que proporciona no solo la radio inalámbrica, sino también un procesador integrado con interfaces para conectarse con varios periféricos. |   ![217643833-2a3555c5-2952-46cf-814e-397453742464](https://user-images.githubusercontent.com/105257367/230508859-b4850e21-7c2b-4272-b3d7-0d3ad95d8447.jpeg)|    1      |      $150      |
+|   2 |  Sensor de temperatura y humedad  DHT11        | El DHT11 es un sensor de temperatura y humedad digital de bajo costo. Utiliza un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos (no hay pines de entrada analógica). | ![image](https://user-images.githubusercontent.com/105257367/230510094-872958dd-481d-4c51-baf9-1446b8ab70ec.png) |     1     |      $78       |
+|   3 |  Buzzer         | Un buzzer o zumbador es un dispositivo que es capaz de enviar avisos a través del sonido. Puede ser mecánico, electromecánico o piezoeléctrico. | ![image](https://user-images.githubusercontent.com/105257367/230510032-1b1647e5-4b44-4852-b9e7-15d9f7ea2ba0.png)|     1     |      $50       |
+|   4 |  Led RGB          | El LED RGB emite luz a través del paso de la corriente eléctrica, pero tiene la peculiaridad de estar compuesto por tres LEDs de diferentes colores: rojo (Red), verde (Green) y azul (Blue ), de ahí el nombre "RGB". | ![image](https://user-images.githubusercontent.com/105257367/230510182-00a601a2-430a-4fc9-b4f6-538fb0e69c21.png)|     1     |       $20     |
+|   5 |  Display LCD          | Una pantalla de cristal líquido o LCD (sigla del inglés liquid-crystal display) es una pantalla delgada y plana formada por un número de píxeles en color o monocromos colocados delante de una fuente de luz o reflectora. A menudo se utiliza en dispositivos electrónicos de pilas, ya que utiliza cantidades muy pequeñas de energía eléctrica. | ![image](https://user-images.githubusercontent.com/105257367/230510806-9535946f-cd0d-4bfe-8db8-2466e6d91959.png)|   1     |     $120        |
+|   6 |  Menbrane Switch         | El Teclado matricial 4×4 es un dispositivo desarrollado para ser utilizado con las placas de desarrollo Arduino, o con Microcontroladores, con este teclado se pueden asignar ordenes a cada una de sus 16 teclas, así mismo se le puede asignar un valor numero a las mismas, la ventaja de este teclado es que al tener una conexión flexible puede ser colocado en cualquier superficie sin problemas. | ![image](https://user-images.githubusercontent.com/105257367/230510946-4b997fe2-0a6c-4888-988e-c32daee5d2d7.png)|    1      |       $196      |
+|   7 |  Breadboard          | La protoboard es una placa de pruebas para electrónica que contiene numerosos orificios en los que es posible insertar cables y otros elementos electrónicos para montar circuitos provisionales | ![image](https://user-images.githubusercontent.com/105257367/230511775-5d5c5e16-1dbc-4e79-87a9-8358c306bca7.png)|    1      |     $$80      |
+|   8 |  Tilt Switch          | Un Tilt Switch o interruptor basculante es un tipo de interruptor o sensor de inclinación que cambia en un cierto ángulo en comparación con el horizonte (similar al antiguo interruptor de mercurio) | ![image](https://user-images.githubusercontent.com/105257367/230511884-87a933fb-25d2-4fed-8ac8-d9b4dbd9d1a8.png)|    1      |    $78         |
+|   9 |   KY-031         | El Módulo KY-031 es mejor conocido como sensor de Impacto, este sensor tiene la capacidad de percibir los impactos que este o una superficie sujeto a este pueda recibir. Trabaja como contacto normalmente abierto y mandando un “1” lógico a través de su terminal de señal en el instante que recibe el contacto físico. | ![image](https://user-images.githubusercontent.com/105257367/230512008-55fdbac4-7d3e-4892-ac45-2af232be3058.png)|    1      |  $50     |
+|  10 |  Servomotor   | Un servomotor es un actuador rotativo o motor que permite un control preciso en términos de posición angular, aceleración y velocidad, capacidades que un motor normal no tiene. |   ![217643550-267eca20-f819-4b53-a030-13fddb7b23e9](https://user-images.githubusercontent.com/105257367/230508822-af154d52-94e2-4044-9a8d-9e47d9e0cd01.jpeg)|    1    |    $180      |
+
 
 ## Epicas del proyecto (Minimo debe de haber una épica por integrante de equipo)
-- Elemento de la lista de épicas del proyecto
-- Elemento de la lista de épicas del proyecto
-- Elemento de la lista de épicas del proyecto
-- Elemento de la lista de épicas del proyecto
+- Quiero tener una caja fuerte que cuente con sensores para garantizar la seguridad de lo que se encuentre dentro y en casos especiales de lo que se encuentre fuera.
+- Quiero que el dispositivo emita un sonido si la contraseña es incorrecta.
+- Quu el dispositivo pueda monitorear el entorno que lo rodea y emitir sonidos acorde a lo que suceda en este.
+- Quiero que el dispositivo cuente con una conexión a una base de datos para guardar y modificar las contraseñas.
 
 ## Tabla de historias de usuario
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
