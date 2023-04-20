@@ -50,9 +50,9 @@ El obejtivo general es crear una caja fuerte inteligente, ya que esta contará c
 ## Tabla de historias de usuario
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
-|  1  | Como usuario quiero tener una caja fuerte la cual solo se abra al ingresar la contraseña correcta   |  Alta        |  4 meses        |       |             |
-|    |                     |           |            |               |             |
-|    |                     |           |            |               |             |
+| 1  | Como usuario quiero tener una caja fuerte la cual solo se abra al ingresar la contraseña correcta   |  Alta        |  4 meses  |       |             |
+| 2  | Como usuario que me muestre por un led si la contraseña es correcta ( verde ) o no ( rojo ) | Baja | 1 dia | Al ingresar una contraseña |            |
+| 3  | Como usuario quiero la caja fuerte pueda detectar |           |            |               |             |
 
 ## Prototipo en dibujo
 - Coloca la fotografia de tu prototipo dibujado a lapiz
