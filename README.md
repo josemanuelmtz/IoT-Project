@@ -57,5 +57,6 @@ El obejtivo general es crear una caja fuerte inteligente, ya que esta contará c
 | 5 | Como usuario quiero que la caja fuerte tenga un display en el cual se muestre si la contraseña ingresada es correcta | Alta | 2 semanas | Al ingresar contraseñas de manera correcta e incorrecta con el keypad|| |
 ## Prototipo en dibujo
 - Coloca la fotografia de tu prototipo dibujado a lapiz
+![WhatsApp Image 2023-04-19 at 7 56 17 PM](https://user-images.githubusercontent.com/106613739/233238475-1e046389-95e6-4a51-af22-bc557cfad27b.jpeg)
 
 
