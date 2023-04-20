@@ -50,11 +50,10 @@ El obejtivo general es crear una caja fuerte inteligente, ya que esta contará c
 ## Tabla de historias de usuario
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
-| 1  | Como usuario quiero tener una caja fuerte la cual solo se abra al ingresar la contraseña correcta   |  Alta        |  4 meses  |       |             |
-| 2  | Como usuario que me muestre por un led si la contraseña es correcta ( verde ) o no ( rojo ) | Baja | 1 dia | Al ingresar una contraseña |            |
-| 3  | Como usuario quiero la caja fuerte pueda detectar |           |            |               |             |
-| 4  | Como usuario quiero que la caja detecte fugas de gas y haga sonar un buzzer cuando el nivel sea alto | Alta | 2 semanas | Al exponer el sensor a una fuga de gas|
-| 5 | Como usuario quiero que la caja fuerte tenga un display en el cual se muestre si la contraseña ingresada es correcta | Alta | 2 semanas | Al ingresar contraseñas de manera correcta e incorrecta con el keypad|| |
+| 1  | Como usuario quiero tener una caja fuerte la cual solo se abra al ingresar la contraseña correcta   |  Alta        |  4 meses  |   Ingresando diversas cpntraseñas para  comprobar que funciona    |       Alan      |
+| 2  | Como usuario que me muestre por un led si la contraseña es correcta ( verde ) o no ( rojo ) | Baja | 1 dia | Al ingresar una contraseña |       Daniel     |
+| 3  | Como usuario quiero que la caja detecte fugas de gas y haga sonar un buzzer cuando el nivel sea alto | Alta | 2 semanas | Al exponer el sensor a una fuga de gas| Todos | 
+| 4 | Como usuario quiero que la caja fuerte tenga un display en el cual se muestre si la contraseña ingresada es correcta | Alta | 2 semanas | Al ingresar contraseñas de manera correcta e incorrecta con el keypad| Manuel |
 ## Prototipo en dibujo
 - Coloca la fotografia de tu prototipo dibujado a lapiz
 ![WhatsApp Image 2023-04-19 at 7 56 17 PM](https://user-images.githubusercontent.com/106613739/233238475-1e046389-95e6-4a51-af22-bc557cfad27b.jpeg)
