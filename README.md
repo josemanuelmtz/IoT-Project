@@ -54,6 +54,7 @@ El obejtivo general es crear una caja fuerte inteligente, ya que esta contará c
 | 2  | Como usuario que me muestre por un led si la contraseña es correcta ( verde ) o no ( rojo ) | Baja | 1 dia | Al ingresar una contraseña |            |
 | 3  | Como usuario quiero la caja fuerte pueda detectar |           |            |               |             |
 | 4  | Como usuario quiero que la caja detecte fugas de gas y haga sonar un buzzer cuando el nivel sea alto | Alta | 2 semanas | Al exponer el sensor a una fuga de gas|
+| 5 | Como usuario quiero que la caja fuerte tenga un display en el cual se muestre si la contraseña ingresada es correcta | Alta | 2 semanas | Al ingresar contraseñas de manera correcta e incorrecta con el keypad|| |
 ## Prototipo en dibujo
 - Coloca la fotografia de tu prototipo dibujado a lapiz
 
