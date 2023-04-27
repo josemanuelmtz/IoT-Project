@@ -1,0 +1,366 @@
+[
+    {
+        "id": "b37b317f268b3fc4",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2b18a42de26ed48a",
+        "type": "mqtt in",
+        "z": "b37b317f268b3fc4",
+        "name": "",
+        "topic": "iot/temp",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "04fb96f1dffdebb3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "23626a03a23b2dd6",
+                "d07333980fd3dad4"
+            ]
+        ]
+    },
+    {
+        "id": "23626a03a23b2dd6",
+        "type": "function",
+        "z": "b37b317f268b3fc4",
+        "name": "function 7",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 140,
+        "wires": [
+            [
+                "48af8f8aa775cfc2"
+            ]
+        ]
+    },
+    {
+        "id": "d07333980fd3dad4",
+        "type": "function",
+        "z": "b37b317f268b3fc4",
+        "name": "function 8",
+        "func": "var temperatura = msg.payload;\nmsg.topic = \"INSERT INTO sensor_values(value, sensor_id) VALUES ('\" + temperatura + \"', 1);\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 200,
+        "wires": [
+            [
+                "0623093006bb4a56"
+            ]
+        ]
+    },
+    {
+        "id": "48af8f8aa775cfc2",
+        "type": "ui_gauge",
+        "z": "b37b317f268b3fc4",
+        "name": "",
+        "group": "f349deea9b1fc45d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 770,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "780847e3f44fbf23",
+        "type": "mqtt in",
+        "z": "b37b317f268b3fc4",
+        "name": "",
+        "topic": "iot/hum",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "04fb96f1dffdebb3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "59786fe88598e6c5",
+                "4ffc9ce52feabc32"
+            ]
+        ]
+    },
+    {
+        "id": "59786fe88598e6c5",
+        "type": "function",
+        "z": "b37b317f268b3fc4",
+        "name": "function 9",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "da723783f50fa2c7"
+            ]
+        ]
+    },
+    {
+        "id": "4ffc9ce52feabc32",
+        "type": "function",
+        "z": "b37b317f268b3fc4",
+        "name": "function 10",
+        "func": "var humedad = msg.payload;\nmsg.topic = \"INSERT INTO sensor_values(value, sensor_id) VALUES ('\" + humedad + \"', 2);\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 340,
+        "wires": [
+            [
+                "a74651f84b3b99d8"
+            ]
+        ]
+    },
+    {
+        "id": "da723783f50fa2c7",
+        "type": "ui_gauge",
+        "z": "b37b317f268b3fc4",
+        "name": "",
+        "group": "f349deea9b1fc45d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humedad",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a74651f84b3b99d8",
+        "type": "mysql",
+        "z": "b37b317f268b3fc4",
+        "mydb": "1d829c82af49cc4c",
+        "name": "Sensor",
+        "x": 760,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa05096e25e7e5dd",
+        "type": "mqtt in",
+        "z": "b37b317f268b3fc4",
+        "name": "",
+        "topic": "iot/gas",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "04fb96f1dffdebb3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 460,
+        "wires": [
+            [
+                "2de4d404badb1ab3",
+                "7f308f148e19345d"
+            ]
+        ]
+    },
+    {
+        "id": "2de4d404badb1ab3",
+        "type": "function",
+        "z": "b37b317f268b3fc4",
+        "name": "function 11",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 420,
+        "wires": [
+            [
+                "366cbb5347c8263f"
+            ]
+        ]
+    },
+    {
+        "id": "7f308f148e19345d",
+        "type": "function",
+        "z": "b37b317f268b3fc4",
+        "name": "function 12",
+        "func": "var gas = msg.payload;\nmsg.topic = \"INSERT INTO sensor_values(value, sensor_id) VALUES ('\" + gas + \"', 3);\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 480,
+        "wires": [
+            [
+                "2d37133fa4332d88"
+            ]
+        ]
+    },
+    {
+        "id": "366cbb5347c8263f",
+        "type": "ui_gauge",
+        "z": "b37b317f268b3fc4",
+        "name": "",
+        "group": "f349deea9b1fc45d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Gas",
+        "label": "units",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "30",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 750,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "2d37133fa4332d88",
+        "type": "mysql",
+        "z": "b37b317f268b3fc4",
+        "mydb": "1d829c82af49cc4c",
+        "name": "Sensor",
+        "x": 760,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0623093006bb4a56",
+        "type": "mysql",
+        "z": "b37b317f268b3fc4",
+        "mydb": "1d829c82af49cc4c",
+        "name": "Sensor",
+        "x": 760,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04fb96f1dffdebb3",
+        "type": "mqtt-broker",
+        "name": "Clase",
+        "broker": "192.168.71.135",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f349deea9b1fc45d",
+        "type": "ui_group",
+        "name": "Sensores",
+        "tab": "1110e635dd2e42a0",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1d829c82af49cc4c",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "iotHome",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "1110e635dd2e42a0",
+        "type": "ui_tab",
+        "name": "Sensores",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
